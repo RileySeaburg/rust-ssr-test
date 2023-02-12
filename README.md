@@ -8,7 +8,7 @@
 
 ## About <a name = "about"></a>
 
-This is a test project to see if I can get a Rust server side rendered app working with a React front end.
+This is a test project to see if I can get a Rust server side rendered app working with a React front end. This version uses vanilla JS to render html on the server. It is also using webpack to bundle the js. Properties from the server are being delivered directly into the javascript using the V8 engine. 
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -51,4 +51,10 @@ cargo run
 ```
 ## Usage <a name = "usage"></a>
 
-This project is not meant to be used in production. It is a test to see if I can get a Rust server side rendered app working with a React front end.
+You will see that a list of items is rendered on the page. This is being done on the server. 
+
+The list of items is being passed from the server to the JavaScript that server renders. 
+
+The JavaScript generates HTML, with an empty div, it also includes a script tag which attaches the data from the server to the window object.
+The HTML is then sent to the client, from there, the client renders the HTML and the JavaScript is executed. 
+The JavaScript then attaches the data to the window object HTML is then rendered on the client.
