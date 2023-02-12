@@ -58,3 +58,5 @@ The list of items is being passed from the server to the JavaScript that server 
 The JavaScript generates HTML, with an empty div, it also includes a script tag which attaches the data from the server to the window object.
 The HTML is then sent to the client, from there, the client renders the HTML and the JavaScript is executed. 
 The JavaScript then attaches the data to the window object HTML is then rendered on the client.
+
+This is a very basic example of how server side rendering can be done with Rust and is used for testing purposes only.
